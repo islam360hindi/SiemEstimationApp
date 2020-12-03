@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="strUsername" xml:space="preserve">
+    <value>Username</value>
+  </data>
+    <data name="strPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+    <data name="strLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+    <data name="strCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+    <data name="strOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+    <data name="strGoldPricePerGram" xml:space="preserve">
+    <value>Gold Price (per gram)</value>
+  </data>
+    <data name="strWeightInGrams" xml:space="preserve">
+    <value>Weight (grams)</value>
+  </data>
+    <data name="strTotalPrice" xml:space="preserve">
+    <value>Total Price: </value>
+  </data>
+    <data name="strDiscountInPercentange" xml:space="preserve">
+    <value>Discount %</value>
+  </data>
+    <data name="strCalculate" xml:space="preserve">
+    <value>Calculate</value>
+  </data>
+    <data name="strPrintToScreen" xml:space="preserve">
+    <value>Print to screen</value>
+  </data>
+    <data name="strPrintToFile" xml:space="preserve">
+    <value>Print to File</value>
+  </data>
+    <data name="strPrintToPaper" xml:space="preserve">
+    <value>Print to Paper</value>
+  </data>
+    <data name="strClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+    <data name="strLogout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+    <data name="strAlert" xml:space="preserve">
+    <value>Alert</value>
+  </data>
+    <data name="alertUsernamePasswordRequired" xml:space="preserve">
+    <value>Username and password are required and must not be empty.</value>
+  </data>
+    <data name="alertWrongUsernameOrPassword" xml:space="preserve">
+    <value>Username/password is not correct. Please try again with valid credentials.</value>
+  </data>
+    <data name="alertSuccess" xml:space="preserve">
+    <value>Success</value>
+  </data>
+    <data name="alertGeneralErrorMessage" xml:space="preserve">
+    <value>Oops! Something went wrong, please try again.</value>
+  </data>
+    <data name="alertLogoutMessage" xml:space="preserve">
+    <value>Are you sure, you want to logout from the app?</value>
+  </data>
+    <data name="alertCancelLogin" xml:space="preserve">
+    <value>Are you sure, you want to exit from the app?</value>
+  </data>
+    <data name="strSelectPrinterType" xml:space="preserve">
+    <value>Select print type.</value>
+  </data>
+    <data name="strPrintToScreen" xml:space="preserve">
+    <value>Print to screen</value>
+  </data>
+    <data name="strPrintToFile" xml:space="preserve">
+    <value>Print to file</value>
+  </data>
+    <data name="strPrintToPaper" xml:space="preserve">
+    <value>Print to paper</value>
+  </data>
+    <data name="strPrintText" xml:space="preserve">
+    <value>Total price estimated for the given unit price {0}/gm and total weight {1} in gms is {2}.</value>
+  </data>
+    <data name="strDone" xml:space="preserve">
+    <value>Done</value>
+  </data>
+    <data name="strExit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+    <data name="strProceedWithYourLogin" xml:space="preserve">
+    <value>Proceed with your Login</value>
+  </data>
+    <data name="strCopyrightText" xml:space="preserve">
+    <value>Copyright 2020 Siemens Technology. ALL RIGHT RESERVED. This Software is the confidential information of the Siemens abd is licensed as restrcited rights software.</value>
+  </data>
+</root>

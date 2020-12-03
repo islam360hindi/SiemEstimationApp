@@ -1,0 +1,16 @@
+﻿[
+  {
+    "FirstName": "Anas",
+    "LastName": "Alam",
+    "Username": "anasmzn@gmail.com",
+    "Password": "12345678",
+    "UserType": "RegularUser"
+  },
+  {
+    "FirstName": "Mahendra",
+    "LastName": "Bahubali",
+    "Username": "mahendra.bahubali@gmail.com",
+    "Password": "123456",
+    "UserType": "PrivilegedUser"
+  }
+]

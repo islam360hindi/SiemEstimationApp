@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.1141" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Services\" />
+    <Folder Include="Localization\" />
+    <Folder Include="MarkupExtensions\" />
+    <Folder Include="DataAccess\" />
+    <Folder Include="Callbacks\" />
+    <Folder Include="Model\" />
+    <Folder Include="Enums\" />
+    <Folder Include="IoC\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Assets\" />
+    <Folder Include="Util\" />
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\LoginTable.json" />
+    <EmbeddedResource Include="Images\siemens_logo.png" />
+    <EmbeddedResource Include="Images\siemens-new-logo-600.jpg" />
+    <EmbeddedResource Include="Images\siemens-logo-default.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Localization\AppResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Localization\AppResources.Designer.cs">
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Assets\LoginTable.json" />
+    <None Remove="Images\siemens_logo.png" />
+    <None Remove="Images\siemens-new-logo-600.jpg" />
+    <None Remove="Images\siemens-logo-default.svg" />
+  </ItemGroup>
+</Project>

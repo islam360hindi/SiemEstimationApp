@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="EstimationApp.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Application.Resources>
+        <Color x:Key="Primary">#2196F3</Color>
+        <Color x:Key="PrimaryDark">#1976D2</Color>
+        <Color x:Key="Secondary">#03DAC6</Color>
+        <Color x:Key="SecondaryVVariant">#018786</Color>
+        <Color x:Key="PrimaryVariant">Gray</Color>
+        <Color x:Key="Background">#FFFFFF</Color>
+        <Color x:Key="Surface">#FFFFFF</Color>
+        <Color x:Key="OnPrimary">#FFFFFF</Color>
+        <Color x:Key="OnSecondary">#FFFFFF</Color>
+        <Color x:Key="OnSurface">#000000</Color>
+        <Color x:Key="OnBackground">#000000</Color>
+        <Color x:Key="Error">#B00020</Color>
+        <Color x:Key="OnError">#FFFFFF</Color>
+
+        <x:Double x:Key="FontLarge">16.0</x:Double>
+        <x:Double x:Key="FontMedium">14.0</x:Double>
+        <x:Double x:Key="FontSmall">12.0</x:Double>
+
+        <Style x:Key="ButtonPrimary" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{DynamicResource Primary}" />
+            <Setter Property="HeightRequest" Value="45" />
+            <Setter Property="CornerRadius" Value="22" />
+            <Setter Property="TextColor" Value="{DynamicResource OnPrimary}" />
+            <Setter Property="FontSize" Value="{DynamicResource FontLarge}" />
+        </Style>
+    </Application.Resources>
+</Application>

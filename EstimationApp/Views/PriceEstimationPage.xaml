@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="EstimationApp.Views.PriceEstimationPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:localization="clr-namespace:EstimationApp.MarkupExtensions"
+    Title="Calculate Price">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Command="{Binding LogoutCommand}" Text="{localization:Translate strLogout}" />
+    </ContentPage.ToolbarItems>
+    <AbsoluteLayout>
+        <StackLayout
+            Padding="10"
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            Spacing="20">
+            <Entry
+                HeightRequest="45"
+                Keyboard="Numeric"
+                Placeholder="{localization:Translate strGoldPricePerGram}"
+                ReturnType="Next"
+                Text="{Binding UnitPrice}" />
+            <Entry
+                HeightRequest="45"
+                Keyboard="Numeric"
+                Placeholder="{localization:Translate strWeightInGrams}"
+                ReturnType="Next"
+                Text="{Binding Weight}" />
+            <Entry
+                HeightRequest="45"
+                IsEnabled="False"
+                IsVisible="{Binding IsDiscountAllowed}"
+                Placeholder="{localization:Translate strDiscountInPercentange}"
+                Text="{Binding Discount}" />
+
+            <Button
+                Command="{Binding CalculateCommand}"
+                Style="{StaticResource ButtonPrimary}"
+                Text="{localization:Translate strCalculate}" />
+            <StackLayout
+                IsVisible="{Binding HasPriceCalculated}"
+                Orientation="Vertical"
+                Spacing="10">
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{localization:Translate strTotalPrice}" />
+                            <Span Text="{Binding TotalPrice, StringFormat='{0:F2}'}" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button
+                    Command="{Binding PrintCommand}"
+                    Style="{StaticResource ButtonPrimary}"
+                    Text="Print" />
+            </StackLayout>
+        </StackLayout>
+        <ActivityIndicator
+            AbsoluteLayout.LayoutBounds="0.5,0.5,50,50"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            HeightRequest="50"
+            IsRunning="True"
+            IsVisible="{Binding IsBusy}"
+            WidthRequest="50" />
+    </AbsoluteLayout>
+</ContentPage>
