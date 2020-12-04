@@ -9,5 +9,7 @@ namespace EstimationApp.DataAccess
         Task<double> CalculatePrice(double unitPrice, double weightInGram, float discount = default);
 
         Task<float> GetDiscountPercentage(UserType userType);
+
+        Task<double> CalculatePrice(string unitPrice);
     }
 }

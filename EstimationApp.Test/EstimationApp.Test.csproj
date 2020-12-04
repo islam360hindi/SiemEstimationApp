@@ -80,6 +80,7 @@
     <Compile Include="TestInitialzer.cs" />
     <Compile Include="ViewModel\PriceEstimationViewModelTest.cs" />
     <Compile Include="ViewModel\PrintToPageViewModelTest.cs" />
+    <Compile Include="DataAcces\PriceEstimationDataAccessTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
